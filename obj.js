@@ -29,7 +29,7 @@ let array1 = ['a', 'b', 'c'];
 let iterator = array1.keys();
 
 for (let key of iterator) {
-  console.log(key);
+    console.log(key);
 
 }
 
@@ -45,10 +45,29 @@ console.log(mp)
 
 // reduce
 
-let rd= arr.reduce((max,min)=>{
-    if(min>max);
-    max=min
+let rd = arr.reduce((max, min) => {
+    if (min > max);
+    max = min
     return max
-},0)
+}, 0)
 
 console.log(rd)
+
+
+class Bike {
+    function() {
+        console.log(this)
+    }
+}
+// Bike()
+var ab = new Bike()
+
+class Car {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model;
+    }
+}
+
+const car1 = new Car('Toyota', 'Yaris');
+console.log(car1);
