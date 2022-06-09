@@ -7,16 +7,16 @@ let mp = arr.map(i => {
 console.log(mp)
 
 let fl = arr.filter(i => {
-    return i % 2!=0;
+    return i % 2 != 0;
 })
 
 console.log(fl)
 
-let rd= arr.reduce((max,min)=>{
-    if(min>max);
-    max=min
+let rd = arr.reduce((max, min) => {
+    if (min > max);
+    max = min
     return max
-},0)
+}, 0)
 
 console.log(rd)
 
@@ -48,5 +48,17 @@ let array1 = ['a', 'b', 'c'];
 let iterator = array1.keys();
 
 for (let key of iterator) {
-  console.log(key);
+    console.log(key);
 }
+
+
+
+// spread operators
+
+let a = [10, 20, 30, 40, 50, 60, 70]
+
+let [one, two,...rest] = a
+
+console.log(rest)
+
+
