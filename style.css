@@ -1,0 +1,36 @@
+img{
+    width: 10%;
+    height: 10%;
+    margin-top: 10%;
+}
+#ig1{
+    margin-bottom: 10%;
+    margin-left: 35%;
+}
+#ig2{
+    margin-bottom: 10%;
+}
+#ig3{
+    margin-bottom: 10%;
+}
+#container{
+    font-size: x-large;
+}
+#container1{
+    font-size: x-large;
+}
+#container2{
+    font-size: x-large;
+}
+#btn{
+    background-color: aqua;
+    border-radius: 10%;
+    width:80px;
+    height: 28px;
+}
+input{
+    width:200px;
+    height:20px;
+    margin-left: 40%;
+    margin-top: 2%;
+}

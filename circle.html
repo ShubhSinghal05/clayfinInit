@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div id="circle"></div>
+        <button id="btn" onclick="fun()">+</button>
+        <button id="btn" onclick="fun1()">-</button>
+
+    </div>
+
+
+    <div id="container">
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    var val = 0;
+
+
+    function fun() {
+        str = document.getElementById("container")
+        str.innerHTML = "Number"
+        var abc = document.createElement("div")
+        abc.setAttribute("id", "abc1")
+        abc.innerHTML = val || 0
+        abc.style.borderRadius = "50%"
+        abc.style.height = "100px"
+        abc.innerHTML = val || 0
+        if (val < 0) {
+            str.style.backgroundColor = "red"
+        } else if (val > 0) {
+            str.style.backgroundColor = "green"
+        } else {
+            str.style.backgroundColor = "yellow"
+        }
+        str.append(abc)
+        val++
+
+    }
+    function fun1() {
+        str = document.getElementById("container")
+        str.innerHTML = "Number"
+        var abc = document.createElement("div")
+        abc.setAttribute("id", "abc1")
+        abc.innerHTML = val || 0
+        abc.style.borderRadius = "50%"
+        abc.style.height = "100px"
+
+        if (val < 0) {
+            str.style.backgroundColor = "red"
+        } else if (val > 0) {
+            str.style.backgroundColor = "green"
+        } else {
+            str.style.backgroundColor = "yellow"
+        }
+        str.append(abc)
+        val--
+
+    }
+
+
+
+
+
+
+
+</script>
