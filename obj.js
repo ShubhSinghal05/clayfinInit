@@ -71,3 +71,54 @@ class Car {
 
 const car1 = new Car('Toyota', 'Yaris');
 console.log(car1);
+
+
+
+// ajax fetching Data
+
+async function fetchText() {
+    let response = await fetch('/readme.txt');
+    let data = await response.json();
+    console.log(data);
+}
+
+
+var xhttp = new XMLHttpRequest();
+
+
+
+    <button onclick="makeRequest()">Make a request</button>
+
+
+  
+ var httpRequest;
+  function makeRequest(){
+
+    httpRequest = new XMLHttpRequest();
+
+    if(!httpRequest){
+        alert('Cannot create an XMLHTTP instance')
+        return false
+    }
+
+        httpRequest.onreadystatechange = getContents;
+        httpRequest.open('GET','ajax.html');
+        httpRequest.send()
+  }
+
+  function getContents(){
+    if(httpRequest.readyState == XMLHttpRequest.DONE){
+        if(httpRequest.status == 200){
+            alert(httpRequest.responseText)
+        }else{
+            alert('There was a problem with the request.');
+        }
+    }
+  }
+
+//   To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:
+
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+ 
+
